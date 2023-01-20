@@ -81,6 +81,77 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <!-- <section>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form action="">
+          <input type="text" name="Name" placeholder="Full Name" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <select name="color">
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Red</option>
+            <option>Yellow</option>
+          </select>
+          <br>
+          <textarea name="Message" placeholder="Message"></textarea> <br>
+          <button type="submit">Send</button>
+        </form>
+    </div>
+</section> -->
+<section id="rsvp" class="bg-no4">
+  <h1 class="text-center py-2 my-2 bg-no3">Are you Attending?</h1>
+  <div class="container col-lg-5 col-md-6 col-sm-8 py-3 my-1">
+    <span class="card">
+      <div class="container col">
+          <form action="https://formsubmit.co/xasexi8262@quamox.com" method="POST" class="needs-validation card-body" novalidate>
+              <div class="col">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="name" class="form-control" id="name" placeholder="Enter Full Name" required>
+                  <div class="valid-feedback">Valid</div>
+                  <div class="invalid-feedback">Invalid</div>
+              </div>
+              <div class="col py-2">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                  <div class="valid-feedback">Valid</div>
+                  <div class="invalid-feedback">Invalid</div>
+              </div> 
+              <div class="col py-2"> 
+                <label for="email" class="form-label">Which events Are you attending?</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Please select</option>
+                  <option value="1">Ceremony and Reception</option>
+                  <option value="2">Ceremony Only</option>
+                  <option value="3">Reception Only</option>
+                  <option value="4">Sorry can't make either</option>
+                </select>
+              </div>
+              <div class="col py-2"> 
+                <label for="email" class="form-label">How many guests are you bringing?</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Please select</option>
+                  <option value="1">No guests</option>
+                  <option value="2">1 guest</option>
+                  <option value="3">2 guests</option>
+                  <option value="4">3 guests</option>
+                  <option value="4">4 guests</option>
+                  <option value="4">5 guests</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="validationMessage" class="form-label">Additional Information</label>
+                <textarea class="form-control is-valid" id="validationMessage" placeholder="eg. vegetarian, no sugary food" required></textarea>
+                <div class="invalid-feedback">Please enter a message in the box.</div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-2">Submit</button>
+          </form>
+      </div>
+    </span> 
+  </div>
+</section>
+
   <section id="sample">
   <div class="container-fluid">
     <h1 class="my-5 text-center">Christian's Coffee</h1>
@@ -179,36 +250,6 @@
     </div>
   </div>
 </section>
-  <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "100736742929349");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 </body>
 <footer>
     <div class="mt-5 p-4 bg-dark text-white text-center">

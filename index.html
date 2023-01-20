@@ -120,7 +120,7 @@
               </div> 
               <div class="col py-2"> 
                 <label for="events" class="form-label">Which events Are you attending?</label>
-                <select class="form-select" aria-label="Default select example">
+                <select id="events" class="form-select" aria-label="Default select example">
                   <option selected>Please select</option>
                   <option value="1">Ceremony and Reception</option>
                   <option value="2">Ceremony Only</option>
@@ -130,7 +130,7 @@
               </div>
               <div class="col py-2"> 
                 <label for="guests" class="form-label">How many guests are you bringing?</label>
-                <select class="form-select" aria-label="Default select example">
+                <select id="guests" class="form-select" aria-label="Default select example">
                   <option selected>Please select</option>
                   <option value="1">No guests</option>
                   <option value="2">1 guest</option>
@@ -250,36 +250,37 @@
     </div>
   </div>
 </section>
-  <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "100736742929349");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
 
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "100736742929349");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v15.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
 <footer>
     <div class="mt-5 p-4 bg-dark text-white text-center">
